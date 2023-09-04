@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Jogo da cobrinha </title>
+</head>
+
+<body>
+    <canvas id="stage" width="400" height="400"></canvas>
+
+    <div id="all_products">
+
+    </div>
+
+    <div class="mainScreen">
+        <h2> Registre um produto </h2>
+        <input id="product_name"    placeholder="Nome do produto" onchange="onChangeProductName()"  />
+        <input id="product_type"    placeholder="Tipo do produto" onchange="onChangeProductType()"  />
+        <select id="product_action" placeholder="Ação do produto" onchange="onChangeProductAction()">
+            <option value="alert_emitter"> Disparar alerta </option>
+            <option value="change_background_color"> Trocar cor de fundo </option>
+            <option value="random_number"> Sortear número aleatório </option>
+        </select>
+        <button onclick="saveProduct()"> Enviar </button>
+    </div>
+
+    <script src="./index.js"> </script>
+</body>
+
+</html>
